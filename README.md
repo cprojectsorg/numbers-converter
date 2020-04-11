@@ -5,7 +5,7 @@ A simple number conversion program.
 
 Compiling
 ---------
-### On GUN/Linux
+### On GNU/Linux
 
 #### Dependencies
 
