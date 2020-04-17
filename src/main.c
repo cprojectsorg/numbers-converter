@@ -55,6 +55,13 @@ static void activate() {
 	} else
 		g_object_unref(pixbuf);
 	
+	gboolean appIcon = gtk_window_set_default_icon_from_file("numbers-converter.ico", &error);
+	
+	if(!appIcon) {
+		g_warning("Couldn’t load icon: %s", error->message);
+		g_error_free(error);
+	}
+	
 	gtk_window_set_icon_name(GTK_WINDOW(window), "numbers-converter");
 	g_signal_connect(window, "destroy", G_CALLBACK(gtk_main_quit), NULL);
 	

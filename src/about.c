@@ -36,7 +36,7 @@ void showAbout() {
 	
 	gtk_about_dialog_set_program_name(GTK_ABOUT_DIALOG(dialog), "Numbers Converter");
 	gtk_about_dialog_set_version(GTK_ABOUT_DIALOG(dialog), "1.0");
-	gtk_about_dialog_set_copyright(GTK_ABOUT_DIALOG(dialog),"Copyright © Cprojects.");
+	gtk_about_dialog_set_copyright(GTK_ABOUT_DIALOG(dialog),"Copyright © 2020 Cprojects.");
 	gtk_about_dialog_set_comments(GTK_ABOUT_DIALOG(dialog), "A simple numbers converter program.");
 	gtk_about_dialog_set_website(GTK_ABOUT_DIALOG(dialog), "http://www.cprojects.org/");
 	gtk_about_dialog_set_logo(GTK_ABOUT_DIALOG(dialog), pixbuf);
